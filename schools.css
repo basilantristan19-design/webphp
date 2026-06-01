@@ -1,0 +1,265 @@
+/* ==========================================================================
+   USJ-R School Management System — schools.css
+   ========================================================================== */
+
+:root {
+    --school-green: #23c483;
+    --school-green-hover: #1da86f;
+    --school-danger: #e74c3c;
+    --school-danger-hover: #c0392b;
+    --school-border: #cbd5e1;
+    --school-text: #334155;
+    --school-bg-light: #f8fafc;
+}
+
+/* Page Header Components */
+.school-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 12px;
+}
+
+.school-page-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #1a2a4a;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Action Buttons */
+.school-btn-create {
+    background-color: #1a2a4a;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background 0.2s ease;
+}
+
+.school-btn-create:hover {
+    background-color: #23c483;
+}
+
+/* Data Table Components */
+.school-table-wrap {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid var(--school-border);
+}
+
+.school-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.school-data-table th {
+    background-color: #1a2a4a;
+    color: #fff;
+    padding: 14px 16px;
+    font-weight: 600;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.school-data-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #edf2f7;
+    color: var(--school-text);
+}
+
+.school-data-table tbody tr:hover {
+    background-color: var(--school-bg-light);
+}
+
+.school-empty-row {
+    text-align: center;
+    padding: 32px !important;
+    color: #94a3b8;
+    font-style: italic;
+}
+
+/* Inline Action Links */
+.school-actions-cell {
+    display: flex;
+    gap: 8px;
+}
+
+.school-btn-update, .school-btn-delete {
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.school-btn-update {
+    background-color: #e2e8f0;
+    color: #1e293b;
+}
+
+.school-btn-update:hover {
+    background-color: var(--school-green);
+    color: #fff;
+}
+
+.school-btn-delete {
+    background-color: #ffeeeb;
+    color: var(--school-danger);
+}
+
+.school-btn-delete:hover {
+    background-color: var(--school-danger);
+    color: #fff;
+}
+
+.school-table-count {
+    margin-top: 12px;
+    font-size: 0.85rem;
+    color: #64748b;
+    font-weight: 500;
+}
+
+/* Form Management Styles */
+.school-entry-form {
+    background: #fff;
+    padding: 28px;
+    border-radius: 8px;
+    border: 1px solid var(--school-border);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    max-width: 650px;
+}
+
+.school-form-row {
+    margin-bottom: 20px;
+}
+
+.school-form-row label {
+    display: block;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+}
+
+.school-input-wrap input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--school-border);
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: var(--school-text);
+    box-sizing: border-box;
+    transition: border-color 0.15s ease;
+}
+
+.school-input-wrap input:focus {
+    outline: none;
+    border-color: #1a2a4a;
+}
+
+/* Error States */
+.school-input-wrap input.school-is-error {
+    border-color: var(--school-danger);
+    background-color: #fff8f8;
+}
+
+.school-field-error {
+    display: block;
+    color: var(--school-danger);
+    font-size: 0.8rem;
+    margin-top: 4px;
+    font-weight: 500;
+}
+
+.school-alert-success {
+    background-color: #ecfdf5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+/* Form Controls Block */
+.school-form-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.school-btn-save {
+    background-color: var(--school-green);
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+}
+
+.school-btn-save:hover {
+    background-color: var(--school-green-hover);
+}
+
+.school-btn-exit {
+    background-color: #64748b;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+}
+
+.school-btn-exit:hover {
+    background-color: #475569;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 16px;
+    padding: 0 2px;
+}
+
+.page-btn {
+    display: inline-block;
+    padding: 6px 14px;
+    border: 1px solid #d0d5dd;
+    border-radius: 6px;
+    background: #fff;
+    color: #344054;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.page-btn:hover {
+    background: #f2f4f7;
+    border-color: #b0b8c9;
+}
+
+.page-btn-active {
+    background: #1d3557;  
+    color: #fff;
+    border-color: #1d3557;
+    pointer-events: none;
+}
